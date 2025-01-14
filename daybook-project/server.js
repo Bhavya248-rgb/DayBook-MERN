@@ -11,6 +11,12 @@ app.use(cors())
 const port = process.env.PORT || 5556;
 
 app.use(express.json());
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
+
 app.use("/api/entries",require("./routes/entryRoutes"));
 app.use("/api/users",require("./routes/userRoutes"));
 app.use(errorHandler);
