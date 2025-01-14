@@ -1,0 +1,58 @@
+/* Entry card css */
+.entry-header{
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* .SingleEntryCard{ */
+    /* width:400px; */
+    /* border : solid; */
+    /* margin-top:20px; */
+
+/* } */
+/* .EntryDetails{ */
+    /* padding:15px; */
+/* } */
+
+/* Add this to your App.css or a dedicated CSS file */
+.entries-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* Creates a responsive grid with 300px columns */
+    gap: 20px;  /* Spacing between grid items */
+    padding: 20px;
+  }
+  
+  .SingleEntryCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .SingleEntryCard:hover {
+    transform: scale(1.05);
+  }
+  
+  /* header { */
+    /* font-size: 1.5rem; */
+    /* font-weight: bold; */
+  /* } */
+  
+  .EntryDetails {
+    margin-top: 15px;
+  }
+  
+.entry-h2{
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  
+.entry-p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
