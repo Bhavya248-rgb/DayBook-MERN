@@ -13,7 +13,7 @@ const Login = () => {
         const data={email,password}
         console.log("Login data :",data)
         try{
-            const response = await axios.post("http://localhost:5002/api/users/login",data)
+            const response = await axios.post("https://daybook-mern-backend.onrender.com/api/users/login",data)
             localStorage.setItem('token', response.data.accessToken);
             console.log("User logged in : ",response.data)
             navigate('/');

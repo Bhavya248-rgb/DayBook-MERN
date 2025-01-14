@@ -12,7 +12,7 @@ const Signup = () => {
         e.preventDefault();
         const data={username,email,password}
         try{
-            const response = await axios.post("http://localhost:5002/api/users/register",data)
+            const response = await axios.post("https://daybook-mern-backend.onrender.com/api/users/register",data)
             // localStorage.setItem('token', response.data.token);
             console.log("Registered successfully")
             navigate('/login');

@@ -17,7 +17,7 @@ const Entry = () => {
     const data = {milestones,thoughts,gratitude,moveOn};
     console.log("Entry data:",data);
     try{
-      const response = await axios.post("http://localhost:5002/api/entries/",data,{
+      const response = await axios.post("https://daybook-mern-backend.onrender.com/api/entries/",data,{
         headers:{
           'Authorization': `Bearer ${token}`
         }

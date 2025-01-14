@@ -16,7 +16,7 @@ const CalendarView = () => {
   React.useEffect(() => {
     const fetchEntries = async () => {
       try {
-        const response = await axios.get('http://localhost:5002/api/entries',{
+        const response = await axios.get('https://daybook-mern-backend.onrender.com/api/entries',{
           headers:{
             'Authorization': `Bearer ${token}`
           }
